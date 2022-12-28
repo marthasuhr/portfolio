@@ -11,30 +11,25 @@ img {
   display: block;
 }
 
-/************* Header **************/
-
-header {
-  position: static;
-  top: 0;
-  padding: 1rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  background-color: #dddfb9;
 }
 
-header nav ul {
-  display: flex;
+/************* Header **************/
 
-  justify-content: space-between;
+header nav ul {
   list-style-type: none;
   margin: 1rem;
   padding: 0;
   padding-bottom: 0.4rem;
   gap: 30px;
   overflow-x: auto;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
   font-size: 2rem;
-
-  border-bottom: 2px solid darkseagreen;
   align-items: baseline;
+  place-self: center;
+}
+
+a {
+  text-decoration: none;
 }
