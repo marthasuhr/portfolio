@@ -17,6 +17,15 @@ body {
 
 /************* Header **************/
 
+.logo {
+  width: 5%;
+}
+
+header {
+  display: flex;
+  position: sticky;
+}
+
 header nav ul {
   list-style-type: none;
   margin: 1rem;
@@ -32,4 +41,108 @@ header nav ul {
 
 a {
   text-decoration: none;
+}
+
+/************ Portfolio knapper *************/
+
+.emnesiteknap {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  border: 2px solid #000000;
+}
+
+.uxknap {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  border: 2px solid #000000;
+}
+
+.animationknap {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  border: 2px solid #000000;
+}
+
+.redesignknap {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  border: 2px solid #000000;
+}
+
+/**************** Burger menu *****************/
+.toggle-btn {
+  display: block;
+}
+
+.main-menu.shown {
+  display: contents;
+}
+
+.main-menu ul {
+  display: none;
+}
+
+.main-menu.shown ul {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  flex-basis: 100%;
+}
+
+/**************** Portfolio Grid ***************/
+
+@media (min-width: 800px) {
+  /***************** Fjern Burger menu i web ********/
+  .banner {
+    background: #5000ca22;
+    padding: 2rem;
+
+    /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 40px;
+  }
+
+  .main-menu ul {
+    list-style: none;
+    padding: 0;
+
+    /* 2. Få elementerne til at stå ved siden af hinanden */
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* burgermenu */
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: none;
+  }
 }
