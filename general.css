@@ -9,10 +9,24 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 2ex;
 }
 
 body {
   background-color: #dddfb9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 2pc;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 /************* Header **************/
@@ -22,8 +36,8 @@ body {
 }
 
 header {
-  display: flex;
   position: sticky;
+  display: flex;
 }
 
 header nav ul {
@@ -34,64 +48,28 @@ header nav ul {
   gap: 30px;
   overflow-x: auto;
   display: flex;
+  font-family: "Poppins, sans serif";
   font-size: 2rem;
   align-items: baseline;
   place-self: center;
+  text-align: right;
 }
 
 a {
   text-decoration: none;
 }
 
-/************ Portfolio knapper *************/
-
-.emnesiteknap {
-  background-color: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  text-decoration: none;
-  border-radius: 12px;
-  display: inline-block;
-  border: 2px solid #000000;
-}
-
-.uxknap {
-  background-color: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  text-decoration: none;
-  border-radius: 12px;
-  display: inline-block;
-  border: 2px solid #000000;
-}
-
-.animationknap {
-  background-color: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  text-decoration: none;
-  border-radius: 12px;
-  display: inline-block;
-  border: 2px solid #000000;
-}
-
-.redesignknap {
-  background-color: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  text-decoration: none;
-  border-radius: 12px;
-  display: inline-block;
-  border: 2px solid #000000;
-}
-
 /**************** Burger menu *****************/
 .toggle-btn {
   display: block;
+  color: purple;
+  position: relative;
+}
+
+.main-menu {
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
 
 .main-menu.shown {
@@ -103,7 +81,6 @@ a {
 }
 
 .main-menu.shown ul {
-  border-top: 1px solid #000;
   padding-top: 1rem;
   display: flex;
   flex-flow: column;
@@ -114,10 +91,9 @@ a {
 
 @media (min-width: 800px) {
   /***************** Fjern Burger menu i web ********/
-  .banner {
-    background: #5000ca22;
-    padding: 2rem;
 
+  .banner {
+    padding: 2rem;
     /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
     display: flex;
     flex-flow: wrap;

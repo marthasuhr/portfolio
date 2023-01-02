@@ -1,0 +1,39 @@
+/*************** Portfolio grid *****************/
+.portfolio_grid {
+  display: grid;
+  grid-column: 1;
+  margin-bottom: 40px;
+}
+
+/****************** Forside grid ***************/
+.emnesite_grid,
+.ux_grid,
+.animation_grid,
+.redesign_grid {
+  display: grid;
+  margin-bottom: 100px;
+}
+
+.emnesiteknap,
+.uxknap,
+.animationknap,
+.redesignknap {
+  display: grid;
+  text-align: center;
+  place-self: center;
+}
+
+/************ Portfolio knapper *************/
+
+.emnesiteknap,
+.uxknap,
+.animationknap,
+.redesignknap {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  border: 2px solid #000000;
+}
