@@ -24,6 +24,10 @@ main {
   margin: 2pc;
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -48,7 +52,7 @@ header nav ul {
   gap: 30px;
   overflow-x: auto;
   display: flex;
-  font-family: "Poppins, sans serif";
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   align-items: baseline;
   place-self: center;
@@ -62,8 +66,8 @@ a {
 /**************** Burger menu *****************/
 .toggle-btn {
   display: block;
-  color: purple;
-  position: relative;
+
+  font-family: "Poppins", sans-serif;
 }
 
 .main-menu {
@@ -81,6 +85,7 @@ a {
 }
 
 .main-menu.shown ul {
+  border-top: 1px solid #000;
   padding-top: 1rem;
   display: flex;
   flex-flow: column;
@@ -93,13 +98,11 @@ a {
   /***************** Fjern Burger menu i web ********/
 
   .banner {
-    padding: 2rem;
     /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px 40px;
   }
 
   .main-menu ul {
@@ -120,5 +123,24 @@ a {
     font-size: 1.1rem;
     cursor: pointer;
     display: none;
+  }
+
+  /*************************** Grid i web ****************************/
+  .emnesite_grid,
+  .ux_grid,
+  .animation_grid,
+  .redesign_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ux_billede {
+    display: grid;
+    grid-column: 2;
+  }
+
+  .ux_tekst {
+    display: grid;
+    grid-column: 1;
   }
 }
