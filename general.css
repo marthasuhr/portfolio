@@ -21,11 +21,13 @@ html {
 }
 
 main {
-  margin: 2pc;
+  margin: 5pc;
 }
 
 h1 {
   text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 5rem;
 }
 
 h2 {
@@ -33,10 +35,14 @@ h2 {
   text-align: center;
 }
 
+a {
+  font-family: "Poppins", sans-serif;
+}
+
 /************* Header **************/
 
 .logo {
-  width: 5%;
+  width: 5pc;
 }
 
 header {
@@ -124,23 +130,22 @@ a {
     cursor: pointer;
     display: none;
   }
-
-  /*************************** Grid i web ****************************/
+  /**************** Ryk rundt i grid på index ****************/
   .emnesite_grid,
   .ux_grid,
   .animation_grid,
   .redesign_grid {
     display: grid;
+    padding: 1pc;
+  }
+
+  .grid_del_2 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .ux_billede {
+  .grid_del_3 {
     display: grid;
-    grid-column: 2;
-  }
-
-  .ux_tekst {
-    display: grid;
-    grid-column: 1;
+    grid-template-columns: 1fr 1fr;
   }
 }
