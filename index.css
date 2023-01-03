@@ -1,8 +1,7 @@
 /*************** Portfolio grid *****************/
 .portfolio_grid {
-  display: grid;
-  grid-column: 1;
-  margin-bottom: 40px;
+  align-items: center;
+  margin-bottom: 20pc;
 }
 
 /****************** Forside grid ***************/
@@ -28,7 +27,8 @@
 .emnesiteknap,
 .uxknap,
 .animationknap,
-.redesignknap {
+.redesignknap,
+.portfolioknap {
   background-color: white;
   font-size: 1rem;
   padding: 0.5rem;
