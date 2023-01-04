@@ -13,7 +13,7 @@ img {
 }
 
 body {
-  background-color: #dddfb9;
+  background-color: #181429;
 }
 
 html {
@@ -28,31 +28,30 @@ h1 {
   text-align: center;
   font-family: "Fredoka One", cursive;
   font-size: 5rem;
+  color: white;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
   text-align: center;
+  color: white;
 }
 
 a,
 p {
   font-family: "Poppins", sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 /************* Header **************/
 
 header {
-  background-color: gray;
+  background-color: #4b456a;
 }
 
 li {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 /**************** Burger menu *****************/
@@ -73,7 +72,7 @@ a {
 }
 
 .logo {
-  width: 5pc;
+  width: 3pc;
 }
 
 .nav-link {
@@ -96,7 +95,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: white;
 }
 
 /*************** Portfolio grid *****************/
@@ -123,6 +122,13 @@ a {
   place-self: center;
 }
 
+/******************** Animations grid **********************/
+
+.grid_animation_del1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /************ Portfolio knapper *************/
 
 .emnesiteknap,
@@ -130,7 +136,9 @@ a {
 .animationknap,
 .redesignknap,
 .portfolioknap {
-  background-color: white;
+  /** Inline block gør boksen passer til teksten***/
+  display: inline-block;
+  background-color: purple;
   font-size: 1rem;
   padding: 0.5rem;
   margin: 1rem;
@@ -139,80 +147,7 @@ a {
   border: 2px solid #000000;
 }
 
-
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-}
-
-
-.hamburger.active .bar:nth-child(2){
-  opacity: 0;
-  
-}
-
-.hamburger.active .bar:nth-child(1){
-  transform:translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3){
-  transform:translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu{
-  position: fixed;
-  left: -100%;
-  top: 70px;
-  gap: 0;
-  flex-direction: column;
-  background-color: aqua;
-  width: 100%;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.nav-item{
-  margin: 16px 0;
-
-}
-
-.nav-menu.active{
-left: 0;
-}
-
-
-
 @media (min-width: 800px) {
-  /***************** Fjern Burger menu i web ********/
-
-  .banner {
-    /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .main-menu ul {
-    list-style: none;
-    padding: 0;
-
-    /* 2. Få elementerne til at stå ved siden af hinanden */
-    display: flex;
-    gap: 1rem;
-  }
-
-  /* burgermenu */
-  .toggle-btn {
-    background: transparent;
-    border: none;
-    min-width: 44px;
-    min-height: 44px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    display: none;
-  }
   /**************** Ryk rundt i grid på index ****************/
   .emnesite_grid,
   .ux_grid,
@@ -242,5 +177,43 @@ left: 0;
   .grid_del_2_emne {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
   }
 }
