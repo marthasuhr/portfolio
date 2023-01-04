@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+
     <link rel="stylesheet" href="general.css" />
 
 
@@ -16,28 +16,35 @@
 </head>
 
 <body>
-    <header class="banner">
-        <div class="logo">
-            <a href="index.html">
-                <img src="pics/logos.svg" alt="logo">
-            </a>
-        </div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="logony.svg" alt="logo"></a>
 
-        <nav class="main-menu">
-
-            <button class="toggle-btn">Menu</button>
-            <ul>
-                <li><a href="emnesite.html">Emnesite</a></li>
-                <li><a href="ux.html">UX</a></li>
-                <li><a href="Animation.html">Animation</a></li>
-                <li><a href="Redesign.html">Redesign</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="cv.html">Om mig</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="emnesite.html" class="nav-link">Emnesite</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ux.html" class="nav-link">UX</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Animation.html" class="nav-link">Animation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item"><a href="cv.html" class="nav-link">Om mig</a>
+                </li>
             </ul>
-
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
 
     </header>
+
     <main>
         <div class="portfolio_grid">
             <h1>Portfolio</h1>
@@ -46,15 +53,15 @@
         </div>
         <div class="grid_del_2">
             <div class="emnesite_grid">
-                <h2>Tema 2</h2>
+                <h2>Tema 2 - Grundlæggende web</h2>
                 <a href="emnesite.html">
                     <img src="pics/emnesitepic.png" alt="emnesite"></a>
-                <h2><a class="emnesiteknap" href="emnesite.html">Emnesite</a></h2>
+                <h2><a class="emnesiteknap" href="emnesite.html">Grundlæggende Web</a></h2>
             </div>
 
 
             <div class="ux_grid">
-                <h2>Tema 3</h2>
+                <h2>Tema 3 - Grundlæggende UX</h2>
                 <a href="ux.html">
                     <img src="pics/uxpic.png" alt="ux"></a>
                 <div>
@@ -66,7 +73,7 @@
         </div>
         <div class="grid_del_3">
             <div class="animation_grid">
-                <h2 class="h2_overskrift">Tema 4</h2>
+                <h2>Tema 4 - Animation</h2>
                 <a href="animation.html">
                     <img src="pics/animationpic.png" alt="animation"></a>
                 <div>
@@ -78,26 +85,23 @@
                 </div>
             </div>
             <div class="redesign_grid">
-                <h2>Tema 5</h2>
+                <h2>Tema 5 - Grundlæggende indhold </h2>
                 <a href="redesign.html">
                     <img src="pics/redesignpic.png" alt="redesign"></a>
                 <div>
-
                     <h2><a class="redesignknap"
-                            href="http://marthasuhr.dk/kea/05_indhold/02_redesign/index.html">Redesign</a>
-
-                    </h2>
+                            href="http://marthasuhr.dk/kea/05_indhold/02_redesign/index.html">Redesign</a></h2>
                 </div>
             </div>
         </div>
 
         <div>
 
-            <h2>Tema 6</h2>
-            <a href="potfolio.html">
-                <img src="pics/blomsterhav.jpg" alt="dummy"></a>
+            <h2>Tema 6 - Porfolio</h2>
+            <a href="potfolio.html"></a>
 
-            <h2><a class="portfolioknap" href="omportfolio.html">Portfolio</a></h2>
+
+            <h2><a class="portfolioknap" href="portfolio.html">Se mere</a></h2>
 
         </div>
 
