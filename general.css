@@ -27,8 +27,9 @@ main {
 h1 {
   text-align: center;
   font-family: "Fredoka One", cursive;
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
+  padding-bottom: 80px;
 }
 
 h2 {
@@ -47,11 +48,19 @@ p {
 /************* Header **************/
 
 header {
-  background-color: #4b456a;
+  border-bottom: 2px solid white;
 }
 
 li {
   list-style: none;
+}
+
+/************** Footer ***************/
+
+footer {
+  border-top: 2px solid white;
+  text-align: center;
+  padding: 2rem;
 }
 
 /**************** Burger menu *****************/
@@ -127,6 +136,7 @@ li {
 .grid_animation_del1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
 /************ Portfolio knapper *************/
@@ -138,13 +148,13 @@ li {
 .portfolioknap {
   /** Inline block gør boksen passer til teksten***/
   display: inline-block;
-  background-color: purple;
+  background-color: #4b4174;
   font-size: 1rem;
   padding: 0.5rem;
   margin: 1rem;
   text-decoration: none;
   border-radius: 12px;
-  border: 2px solid #000000;
+  border: 2px solid white;
 }
 
 @media (min-width: 800px) {
@@ -176,7 +186,7 @@ li {
 
   .grid_del_2_emne {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -203,7 +213,7 @@ li {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #4b4174;
     width: 100%;
     text-align: center;
     transition: 0.3s;
