@@ -12,6 +12,10 @@ img {
   border-radius: 2ex;
 }
 
+.logo img {
+  border-radius: 0;
+}
+
 body {
   background-color: #181429;
 }
@@ -36,6 +40,8 @@ h2 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: white;
+  padding-bottom: 80px;
+  padding-top: 40px;
 }
 
 a,
@@ -182,6 +188,7 @@ footer {
   .grid_del_1_emne {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 
   .grid_del_2_emne {
