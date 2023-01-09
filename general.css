@@ -174,12 +174,13 @@ footer {
 
 .portfolio_forside_grid {
   align-items: center;
-  margin: 10pc 0 10pc;
+  margin: 0 0 80px 0;
   padding: 1rem;
-  border: 2px solid white;
-  border-radius: 6ex;
 }
 
+.portfolio_forside_grid h1 {
+  font-size: 4rem;
+}
 /******************** Animations grid **********************/
 
 .grid_animation_del1 {
@@ -191,7 +192,7 @@ footer {
 /******************* Emensite Grid mobil *********************/
 
 .emnesite_h2 {
-  margin: 80px 0 80px 0;
+  margin: 80px 0 10px 0;
   gap: 20px;
 }
 
@@ -203,7 +204,7 @@ footer {
   margin-bottom: 20px;
 }
 
-/******************** Portfolio grid ***********************/
+/******************** Portfolio grid mobil ***********************/
 .mobil_grid_portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -219,7 +220,7 @@ footer {
   border-radius: 2ex;
 }
 
-/********************* MIT CV ****************************/
+/********************* Om mig grid mobil ****************************/
 
 .cv_grid {
   display: grid;
@@ -230,7 +231,7 @@ footer {
 }
 
 @media (min-width: 800px) {
-  /**************** Ryk rundt i grid på index ****************/
+  /**************** Index grid web ****************/
   .emnesite_grid,
   .ux_grid,
   .animation_grid,
@@ -249,7 +250,11 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  /**************** Emnesite Grid Web******************/
+  .portfolio_forside_grid h1 {
+    font-size: 8.5rem;
+  }
+
+  /**************** Emnesite Grid Web ******************/
 
   .grid_del_1_emne {
     display: grid;
@@ -273,12 +278,11 @@ footer {
     gap: 20px;
   }
 
-  /****************** Grid portfolio web *******************/
+  /****************** Portfolio grid web *******************/
 
   .grid_portfolio_del1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     gap: 10px;
   }
 
@@ -289,7 +293,7 @@ footer {
   }
 }
 
-/***************** hamburger mediequery **************/
+/***************** Hamburger mediequery **************/
 
 @media (max-width: 768px) {
   .hamburger {
