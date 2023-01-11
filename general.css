@@ -22,6 +22,20 @@ img {
   width: 3pc;
 }
 
+body {
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 3pc;
+}
+
+/****************** Regler for mine billeder *******************/
+
 .billeder_knapper,
 .billeder {
   aspect-ratio: 16/9;
@@ -36,18 +50,6 @@ img {
 .billeder2 {
   aspect-ratio: 10/9;
   object-fit: cover;
-}
-
-body {
-  background-color: black;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-main {
-  margin: 3pc;
 }
 
 /*************** Tekst *********************/
@@ -135,6 +137,15 @@ footer {
   border: 2px solid white;
 }
 
+.portfolioknap:hover,
+.emnesiteknap:hover,
+.uxknap:hover,
+.redesignknap:hover,
+.animationknap:hover {
+  color: turquoise;
+  border: 2px solid turquoise;
+}
+
 .seportfolio_knap {
   display: inline-block;
   background-color: #000000;
@@ -152,15 +163,7 @@ footer {
   border-bottom: 2px solid turquoise;
 }
 
-.portfolioknap:hover,
-.emnesiteknap:hover,
-.uxknap:hover,
-.redesignknap:hover,
-.animationknap:hover {
-  border: 2px solid turquoise;
-}
-
-/*************** Forside Grid *********************/
+/*************** INDEX GRID MOBBIL *********************/
 .emnesite_grid,
 .ux_grid,
 .animation_grid,
@@ -171,18 +174,17 @@ footer {
 
 .portfolio_forside_grid {
   align-items: center;
-  margin: 0 0 80px 0;
+  margin-bottom: 120px;
   padding: 1rem;
 }
 
 .portfolio_forside_grid h1 {
   font-size: 4rem;
 }
-/******************** Animations grid **********************/
+/******************** ANIMATIONS GRID MOBIL **********************/
 
 .animationskitse_grid {
   display: grid;
-
   gap: 20px;
 }
 
@@ -191,7 +193,7 @@ footer {
   margin-bottom: 70px;
 }
 
-/******************* Emensite Grid mobil *********************/
+/******************* EMNESITE GRID MOBIL *********************/
 
 .emnesite_h2 {
   margin: 80px 0 10px 0;
@@ -213,27 +215,27 @@ footer {
   gap: 40px;
 }
 
-/********************** UX GRID *******************/
+/********************** UX GRID MOBIL *******************/
 
 .uxside_grid {
   margin-top: 40px;
 }
 
 .nederst_uxside_grid {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .toptekst_ux {
   margin-top: 40px;
 }
 
-/********************* Redesign grid ********************/
+/********************* REDESIGN GRID MOBIL ********************/
 
 .redesign_grid_margin {
   margin-top: 170px;
 }
 
-/******************** Portfolio grid mobil ***********************/
+/******************** PORTFOLIO GRID MOBIL ***********************/
 
 .logo_tekst {
   text-align: center;
@@ -244,11 +246,17 @@ footer {
   border-radius: 2ex;
 }
 
-/********************* Om mig grid mobil ****************************/
+.grid_portfolio_del1 {
+  display: grid;
+  gap: 20px;
+}
+
+/********************* CV GRID MOBIL ****************************/
 
 .cv_grid {
   padding: 2rem;
   gap: 10px;
+  margin-bottom: 80px;
 }
 
 .evner_grid {
@@ -261,7 +269,7 @@ footer {
   display: none;
 }
 
-/*************** Burger Menu *********************/
+/*************** BURGER MENU *********************/
 
 .navbar {
   min-height: 70px;
@@ -301,11 +309,12 @@ footer {
   background-color: white;
 }
 
+/*********************************************************/
 /********************* MEDIA QUERY ***********************/
 /*********************************************************/
 
 @media (min-width: 800px) {
-  /***************** Info tekst web ***************/
+  /***************** INFO TEKST WEB ***************/
 
   .info_tekst {
     display: flex;
@@ -319,7 +328,7 @@ footer {
     width: 100px;
   }
 
-  /**************** Index grid web ****************/
+  /**************** INDEX GRID WEB ****************/
   .emnesite_grid,
   .ux_grid,
   .animation_grid,
@@ -345,7 +354,7 @@ footer {
     margin-right: -8rem;
   }
 
-  /**************** Emnesite Grid Web ******************/
+  /**************** EMNESITE GRID WEB ******************/
 
   .grid_del_1_emne {
     display: grid;
@@ -369,7 +378,7 @@ footer {
     gap: 20px;
   }
 
-  /****************** Animation grid web ********************/
+  /****************** ANIMATION GRID WEB ********************/
 
   .grid_animation_del1 {
     display: grid;
@@ -385,13 +394,22 @@ footer {
     margin-top: 40px;
   }
 
-  /****************** Portfolio grid web *******************/
+  /********************** Redesign Grid web ************************/
+
+  .redesign_grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pc;
+  }
+
+  /****************** PORTFOLIO GRID WEB *******************/
 
   .grid_portfolio_del1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     margin-bottom: 120px;
+    margin-top: 40px;
   }
 
   .grid_portfolio_del2 {
@@ -410,15 +428,7 @@ footer {
     grid-column: 2;
   }
 
-  /********************** Redesign Grid web ************************/
-
-  .redesign_grid_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10pc;
-  }
-
-  /*********************** CV grid web *******************/
+  /*********************** CV GRID WEB *******************/
 
   .cv_grid {
     display: grid;
@@ -427,14 +437,22 @@ footer {
     gap: 40px;
   }
 
-  .cv_tekstommig {
-    margin-top: 110px;
+  .mit_navn_grid {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .billeder2 {
+    display: grid;
+    grid-column: 2;
+    aspect-ratio: 10/9;
+    object-fit: cover;
   }
 
   .cv_grid_nederst {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem;
+
     gap: 40px;
   }
   .evner_grid {
@@ -446,20 +464,14 @@ footer {
     grid-column: 2;
   }
 
-  .billeder2 {
-    aspect-ratio: 10/9;
-    object-fit: cover;
-    transform: scale(0.7);
-  }
-
-  /**************** Main ændringeri web *******************/
+  /**************** MAIN ÆNDRINGER I WEB *******************/
 
   main {
     margin: 10pc;
   }
 }
 
-/***************** Hamburger mediequery **************/
+/***************** BURGER MENU MEDIA QUERY **************/
 
 @media (max-width: 768px) {
   .hamburger {
