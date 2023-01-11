@@ -28,15 +28,14 @@ img {
   object-fit: cover;
 }
 
-.billeder2 {
-  aspect-ratio: 10/9;
-  object-fit: cover;
-  width: 80%;
-}
-
 .billeder_knapper:hover {
   border: 4px solid turquoise;
   scroll-behavior: smooth;
+}
+
+.billeder2 {
+  aspect-ratio: 10/9;
+  object-fit: cover;
 }
 
 body {
@@ -109,6 +108,163 @@ footer {
   display: none;
 }
 
+.info_tekst_link {
+  border-bottom: 1.5px solid white;
+}
+
+.info_tekst_link:hover {
+  color: turquoise;
+  border-bottom: 1.5px solid turquoise;
+}
+
+/*************** Knapper stil *********************/
+
+.emnesiteknap,
+.uxknap,
+.animationknap,
+.redesignknap,
+.portfolioknap {
+  /** Inline block gør boksen passer til teksten***/
+  display: inline-block;
+  background-color: #000000;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
+.seportfolio_knap {
+  display: inline-block;
+  background-color: #000000;
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  margin-bottom: 15rem;
+  font-size: 3rem;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.seportfolio_knap:hover {
+  color: turquoise;
+  border-bottom: 2px solid turquoise;
+}
+
+.portfolioknap:hover,
+.emnesiteknap:hover,
+.uxknap:hover,
+.redesignknap:hover,
+.animationknap:hover {
+  border: 2px solid turquoise;
+}
+
+/*************** Forside Grid *********************/
+.emnesite_grid,
+.ux_grid,
+.animation_grid,
+.redesign_grid {
+  display: grid;
+  margin-bottom: 100px;
+}
+
+.portfolio_forside_grid {
+  align-items: center;
+  margin: 0 0 80px 0;
+  padding: 1rem;
+}
+
+.portfolio_forside_grid h1 {
+  font-size: 4rem;
+}
+/******************** Animations grid **********************/
+
+.animationskitse_grid {
+  display: grid;
+
+  gap: 20px;
+}
+
+.grid_animation_del1 {
+  display: grid;
+  margin-bottom: 70px;
+}
+
+/******************* Emensite Grid mobil *********************/
+
+.emnesite_h2 {
+  margin: 80px 0 10px 0;
+  gap: 20px;
+}
+
+.grid_del_1_emne {
+  margin-bottom: 100px;
+}
+
+.grid_del_2_emne {
+  display: grid;
+  gap: 40px;
+
+  margin-bottom: 100px;
+}
+
+.grid_del_2_emne img {
+  gap: 40px;
+}
+
+/********************** UX GRID *******************/
+
+.uxside_grid {
+  margin-top: 40px;
+}
+
+.nederst_uxside_grid {
+  margin-top: 100px;
+}
+
+.toptekst_ux {
+  margin-top: 40px;
+}
+
+/********************* Redesign grid ********************/
+
+.redesign_grid_margin {
+  margin-top: 170px;
+}
+
+/******************** Portfolio grid mobil ***********************/
+
+.logo_tekst {
+  text-align: center;
+}
+
+.logopic {
+  border: 2px solid white;
+  border-radius: 2ex;
+}
+
+/********************* Om mig grid mobil ****************************/
+
+.cv_grid {
+  padding: 2rem;
+  gap: 10px;
+}
+
+.evner_grid {
+  padding: 2rem;
+  border: 2px solid white;
+  border-radius: 2ex;
+}
+
+.cv_grid_nederst img {
+  display: none;
+}
+
+.cv_tekstommig {
+  margin-top: 10%;
+}
+
 /*************** Burger Menu *********************/
 
 .navbar {
@@ -149,119 +305,8 @@ footer {
   background-color: white;
 }
 
-/*************** Knapper stil *********************/
-
-.emnesiteknap,
-.uxknap,
-.animationknap,
-.redesignknap,
-.portfolioknap {
-  /** Inline block gør boksen passer til teksten***/
-  display: inline-block;
-  background-color: #000000;
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  text-decoration: none;
-  border-radius: 12px;
-  border: 2px solid white;
-}
-
-.info_tekst_link {
-  border-bottom: 1.5px solid white;
-}
-
-.info_tekst_link:hover {
-  color: turquoise;
-  border-bottom: 1.5px solid turquoise;
-}
-
-.seportfolio_knap {
-  display: inline-block;
-  background-color: #000000;
-  font-size: 1rem;
-  margin-top: 2rem;
-  text-decoration: none;
-  border-bottom: 2px solid white;
-  margin-bottom: 15rem;
-  font-size: 3rem;
-  font-family: "Rubik Mono One", sans-serif;
-}
-
-.seportfolio_knap:hover {
-  color: turquoise;
-}
-
-.portfolioknap:hover,
-.emnesiteknap:hover,
-.uxknap:hover,
-.redesignknap:hover,
-.animationknap:hover {
-  border: 2px solid turquoise;
-}
-
-/*************** Forside Grid *********************/
-.emnesite_grid,
-.ux_grid,
-.animation_grid,
-.redesign_grid {
-  display: grid;
-  margin-bottom: 100px;
-}
-
-.portfolio_forside_grid {
-  align-items: center;
-  margin: 0 0 80px 0;
-  padding: 1rem;
-}
-
-.portfolio_forside_grid h1 {
-  font-size: 4rem;
-}
-/******************** Animations grid **********************/
-
-/******************* Emensite Grid mobil *********************/
-
-.emnesite_h2 {
-  margin: 80px 0 10px 0;
-  gap: 20px;
-}
-
-.grid_del_2_emne {
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-/********************** UX GRID *******************/
-
-.uxside_grid {
-  margin-top: 20px;
-}
-
-/******************** Portfolio grid mobil ***********************/
-
-.logo_tekst {
-  text-align: center;
-}
-
-.logopic {
-  border: 2px solid white;
-  border-radius: 2ex;
-}
-
-/********************* Om mig grid mobil ****************************/
-
-.cv_grid {
-  padding: 2rem;
-  gap: 20px;
-}
-
-.evner_grid {
-  display: inline-block;
-  padding: 2rem;
-  border: 2px solid white;
-  border-radius: 2ex;
-}
+/********************* MEDIA QUERY ***********************/
+/*********************************************************/
 
 @media (min-width: 800px) {
   /***************** Info tekst web ***************/
@@ -273,7 +318,7 @@ footer {
   }
 
   .info_tekst img {
-    display: grid;
+    display: flex;
     border: none;
     width: 100px;
   }
@@ -341,6 +386,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin-top: 40px;
   }
 
   /****************** Portfolio grid web *******************/
@@ -376,18 +422,38 @@ footer {
     gap: 10pc;
   }
 
-  /*********************** CV GRID WEB *******************/
+  /*********************** CV grid web *******************/
 
   .cv_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
-    gap: 20px;
+    gap: 40px;
+  }
+
+  .cv_tekstommig {
+    margin-top: 110px;
   }
 
   .cv_grid_nederst {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 40px;
+  }
+  .evner_grid {
+    display: grid;
+    grid-column: 1;
+  }
+  .tekst_evner_grid {
+    display: grid;
+    grid-column: 2;
+  }
+
+  .billeder2 {
+    aspect-ratio: 10/9;
+    object-fit: cover;
+    transform: scale(0.7);
   }
 
   /**************** Main ændringeri web *******************/
